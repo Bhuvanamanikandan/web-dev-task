@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.team-heading {
+    text-align: center;
+    margin: 40px 0 20px;
+}
+
+.label {
+    color: #fff;
+    background-color: purple;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px; /* Ensures consistent spacing between team members */
+}
+
+.team-member {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 50%; /* Makes the shape circular */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 30px;
+    text-align: center;
+    width: 200px; /* Adjust size as necessary */
+    height: 200px; /* Height and width should be equal for a perfect circle */
+    overflow: hidden; /* Prevents content from overflowing the circular shape */
+    box-sizing: border-box;
+}
+
+.team-member img {
+    border-radius: 50%; /* Ensures the image is also circular */
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px; /* Adds some space between the image and the text */
+}
+
+.team-member h2, .team-member p {
+    margin: 5px 0; /* Reduces space between text elements */
+}
+
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa; /* Color for the icon */
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .team-container {
+        gap: 20px;
+    }
+}
+
+
